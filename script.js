@@ -864,7 +864,7 @@ function setupCounter(element) {
     }
 
     function goToAIModel() {
-        window.location.href = 'https://chatgpt.com/g/g-679a815d5bfc81919b540029fb4632a0-job-assistant-bd-ujjibon'; // Replace with your AI model URL
+        window.location.href = 'https://chatgpt.com/g/g-679a815d5bfc81919b540029fb4632a0-job-assistant-bd-ujjibon';
     }
 
     setTimeout(showPopup, 12000);
