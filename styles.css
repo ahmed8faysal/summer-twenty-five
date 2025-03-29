@@ -1890,7 +1890,7 @@ footer {
     }
   }
 
-.popup {
+  .popup {
     position: fixed;
     top: 0;
     left: 0;
@@ -1901,7 +1901,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1000;
-    padding: 20px; 
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -1911,7 +1911,7 @@ footer {
     border-radius: 15px;
     text-align: center;
     position: relative;
-    max-width: 600px; 
+    max-width: 600px;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -1925,13 +1925,13 @@ footer {
 
 .close-popup {
     position: absolute;
-    top: 10px; 
-    right: 10px; 
+    top: 10px;
+    right: 10px;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
-    color: #333; 
+    color: #333;
 }
 
 .btn.primary-btn2 {
@@ -1953,25 +1953,26 @@ footer {
 
 @media (max-width: 768px) {
     .popup-content {
-        max-width: 90%; 
-        padding: 15px; 
+        max-width: 90%;
+        padding: 15px;
     }
 
     .close-popup {
-        font-size: 20px; 
+        font-size: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .popup-content {
-        max-width: 100%; 
-        padding: 10px; 
+        max-width: 100%;
+        padding: 10px;
     }
 
     .close-popup {
-        font-size: 18px; 
+        font-size: 18px;
     }
 }
+
 /* last updated 23 March 11.45 PM */
 /* :root { 
     --primary-color: #fcab4e;

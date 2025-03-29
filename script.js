@@ -868,7 +868,7 @@ function setupCounter(element) {
     }
 
     setTimeout(showPopup, 12000);
-    
+
     const closePopupButton = document.getElementById('close-popup');
     if (closePopupButton) {
         closePopupButton.addEventListener('click', closePopup);
@@ -878,7 +878,16 @@ function setupCounter(element) {
     if (goToAIButton) {
         goToAIButton.addEventListener('click', goToAIModel);
     }
+
+    window.addEventListener('resize', function() {
+        const displayStyle = window.innerWidth < 480 ? 'block' : 'flex';
+        const popup = document.getElementById('popup');
+        if (popup.style.display !== 'none') {
+            popup.style.display = displayStyle;
+        }
+    });
 });
+
 //last updated 23 march 11.45 PM
 /* document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
