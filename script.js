@@ -671,9 +671,9 @@ const events = [
     {
       id: '1',
       title: 'Career Accelerator 1.0',
-      date: 'Upcoming',
+      date: 'Upcoming...',
       time: '2:00 PM',
-      location: 'IBA Auditorium, Dhaka University',
+      location: 'Announce soon...',
       price: 4.50,
       image: 'https://i.postimg.cc/BQcxKZ3z/Career-Peer.png',
       description: 'Bangladesh’s first peer-led AI powered career support program is here to help you unlock job opportunities, gain essential skills, and build confidence for your dream career.',
@@ -852,23 +852,33 @@ function setupCounter(element) {
     initPartnerAnimations();
   })
 
-function showPopup() {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'flex';
-}
+  document.addEventListener('DOMContentLoaded', function() {
+    function showPopup() {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'flex';
+    }
 
-function closePopup() {
-    const popup = document.getElementById('popup');
-    popup.style.display = 'none';
-}
+    function closePopup() {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'none';
+    }
 
-function goToAIModel() {
-    window.location.href = 'https://chatgpt.com/g/g-679a815d5bfc81919b540029fb4632a0-job-assistant-bd-ujjibon'; // Replace with your AI model URL
-}
+    function goToAIModel() {
+        window.location.href = 'https://chatgpt.com/g/g-679a815d5bfc81919b540029fb4632a0-job-assistant-bd-ujjibon'; // Replace with your AI model URL
+    }
 
-setTimeout(showPopup, 12000);
-document.getElementById('close-popup').addEventListener('click', closePopup);
-document.getElementById('go-to-ai').addEventListener('click', goToAIModel);
+    setTimeout(showPopup, 12000);
+    
+    const closePopupButton = document.getElementById('close-popup');
+    if (closePopupButton) {
+        closePopupButton.addEventListener('click', closePopup);
+    }
+
+    const goToAIButton = document.getElementById('go-to-ai');
+    if (goToAIButton) {
+        goToAIButton.addEventListener('click', goToAIModel);
+    }
+});
 //last updated 23 march 11.45 PM
 /* document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
