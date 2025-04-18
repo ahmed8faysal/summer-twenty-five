@@ -102,7 +102,7 @@ function handleSendMessage() {
   showLoadingIndicator();
   
   setTimeout(() => {
-    const responseContent = "As South Asia's first Career AI, I'm here to help with your professional journey. I can assist with resume reviews, interview preparation, career path guidance, and industry insights specific to South Asian markets. How specifically can I help with your career today?";
+    const responseContent = "As Bangladesh's first Career AI, I'm here to help with your professional journey. I can assist with resume reviews, interview preparation, career path guidance, and industry insights specific to Bangladesh markets. How specifically can I help with your career today?";
     
     const assistantMessage = {
       id: (Date.now() + 1).toString(),
