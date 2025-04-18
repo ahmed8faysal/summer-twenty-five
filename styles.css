@@ -1989,16 +1989,16 @@ footer {
 
 /* peer group */
 .banner {
+    margin-left: 165px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(images/career\ peer\ bd.jpg);
     background-size: cover;
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
     height: 500px;
-    width: auto;
+    width: 1000px;
+    border: 2px solid black;
 }
 
 .cta-button {
@@ -2008,9 +2008,12 @@ footer {
     padding: 15px 30px;
     font-size: 18px;
     border-radius: 5px;
+    margin-top: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-left: 470px;
 }
+
 .cta-button:hover {
     background-color: #F57C20;
 }
