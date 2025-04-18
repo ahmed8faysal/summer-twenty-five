@@ -1989,7 +1989,7 @@ footer {
 
 /* peer group */
 .banner {
-    margin-left: 165px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2011,11 +2011,43 @@ footer {
     margin-top: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 470px;
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
 }
+
 
 .cta-button:hover {
     background-color: #F57C20;
+}
+
+@media (max-width: 1200px) {
+    .banner {
+        width: 90%; 
+        height: 400px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px;
+    }
+
+    .cta-button {
+        padding: 10px 20px; 
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 200px; 
+    }
+
+    .cta-button {
+        padding: 8px 15px; 
+        font-size: 14px; 
+    }
 }
 
 /* last updated 23 March 11.45 PM */
@@ -3999,5 +4031,70 @@ footer {
 
     .close-popup {
         font-size: 18px; 
+    }
+} 
+
+/* Base styles for the banner 
+.banner {
+    margin: 0 auto; /* Center the banner 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/career\ peer\ bd.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: 500px;
+    width: 1000px;
+    border: 2px solid black;
+}
+
+/* Styles for the call-to-action button 
+.cta-button {
+    background-color: #FF9800;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: auto; /* Center the button 
+    margin-right: auto; /* Center the button 
+    display: block; /* Make the button a block element 
+}
+
+/* Hover effect for the button 
+.cta-button:hover {
+    background-color: #F57C20;
+}
+
+/* Responsive styles 
+@media (max-width: 1200px) {
+    .banner {
+        width: 90%; /* Use 90% of the viewport width 
+        height: 400px; /* Adjust height for smaller screens 
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 300px; /* Further adjust height 
+    }
+
+    .cta-button {
+        padding: 10px 20px; /* Adjust padding for smaller screens 
+        font-size: 16px; /* Adjust font size 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 200px; /* Further adjust height 
+    }
+
+    .cta-button {
+        padding: 8px 15px; /* Further adjust padding 
+        font-size: 14px; /* Further adjust font size 
     }
 } */
