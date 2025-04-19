@@ -2050,45 +2050,6 @@ footer {
     }
 }
 
-/* updated partners */
-.partner-section {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #fff;
-    overflow: hidden;
-    position: relative;
-}
-
-.partner-section h2 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    color: #333;
-}
-
-.partner-logos {
-    display: flex;
-    animation: scroll 20s linear infinite;
-}
-
-.logoPar {
-    flex: 0 0 auto;
-    margin: 0 50px;
-}
-
-.logoPar img {
-    max-width: 150px;
-    height: auto;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
 /* last updated 23 March 11.45 PM */
 /* :root { 
     --primary-color: #fcab4e;
